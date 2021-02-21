@@ -43,7 +43,7 @@ class IKEv1Client(object):
     def secRandom(self, bytes):
 	#Creates selected number of random bytes
 	#Provide the number of bytes required as input, method will return raw bytes
-	randomBytes = OpenSSL.rand.bytes(bytes)
+	randomBytes = os.urandom(bytes)
 	return randomBytes
 
     def payBuild(self, strPayload, lenLen, *arg):
