@@ -899,7 +899,7 @@ class IKEv1Handler(object):
 
 
 		elif msgID != "00000000":
-                	ikeCrypto = crypto.ikeCrypto()
+                	ikeCrypto = ikecrypto.ikeCrypto()
                 	try:
                         	if self.debug > 0:
                         	        print "Current IV: %s"%curIV.encode('hex')
