@@ -942,8 +942,7 @@ class IKEv1Handler(object):
                                         dicCrypto["xType"] = xType
                                         dicCrypto["iCookie"] = iCookie
                                         dicCrypto["msgID"] = msgID
-                                        return dicCrypto
-
+                                        return dicCrypto, None
 
                         	else:
                                 	print "This exchange type %s is not included yet. Exiting..."%xType
