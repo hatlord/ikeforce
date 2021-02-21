@@ -934,7 +934,7 @@ class IKEv1Handler(object):
                                 	dicCrypto["xType"] = xType
                                 	dicCrypto["iCookie"] = iCookie
                                 	dicCrypto["msgID"] = msgID
-                                	return dicCrypto
+                                	return dicCrypto, None
 
                                 elif xType == "32" or xType == 32:
 					ikeHandling.parsePayload(ikePlain,nextPay,flags,0,phase)
